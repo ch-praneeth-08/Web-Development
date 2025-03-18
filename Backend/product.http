@@ -1,0 +1,32 @@
+###get a product 
+get http://localhost:3000/product-api/products
+###
+get http://localhost:3000/product-api/product/1
+
+### 
+post http://localhost:3000/product-api/product
+Content-Type: application/json
+
+{
+    "id":2,
+    "name":"mobile",
+    "price":12349
+} 
+###
+put http://localhost:3000/product-api/product
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"earpods",
+    "price":22
+}
+
+###
+delete http://localhost:3000/product-api/product/1
+
+
+
+
+
+

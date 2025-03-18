@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<script>
+    function render(){
+        const a = document.getElementById("first").value;
+        const b = document.getElementById("second").value;
+        const element = document.getElementById("finalsum");
+        element.innerHTML = parseInt(a)+ parseInt(b);
+    }
+</script>
+<body>
+    <input type="text" id="first" placeholder="first number"></input><br><br>
+    <input type="text" id="second" placeholder="second number"></input><br><br>
+    <button onclick="render()">Calculate Sum</button>
+    <div id = "finalsum"></div>
+</body>
+</html>
