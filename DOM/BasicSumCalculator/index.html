@@ -3,21 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
+    <title>Sum</title>
+    <script>
+        function PopulateDiv(){
+            const a = document.getElementById("num1").value;
+            const b = document.getElementById("num2").value;
+
+            const element = document.getElementById("finalsum")
+            element.innerHTML = parseInt(a) + parseInt(b);
+        }
+    </script>
 </head>
-<script>
-    function render(){
-        const a = document.getElementById("first").value;
-        const b = document.getElementById("second").value;
-        const element = document.getElementById("finalsum");
-        element.innerHTML = parseInt(a)+ parseInt(b);
-    }
-</script>
-<body>
-    <input type="text" id="first" placeholder="first number"></input><br><br>
-    <input type="text" id="second" placeholder="second number"></input><br><br>
-    <button onclick="render()">Calculate Sum</button>
-    <div id = "finalsum"></div>
+    <input type="text" placeholder = "Enter first number" id="num1"></input>
+    <br><br>
+    <input type="text" placeholder = "Enter second number" id="num2"></input>
+    <br><br>
+    <button onclick = "PopulateDiv()">Calculate Sum</button> 
+    <br>
+    <br>
+    <div id="finalsum">
+
+    </div>
 </body>
 </html>
